@@ -6,14 +6,16 @@
 > python cut_txt.py
 
 这一步是分词并保存分词结果
-    然后 
+
+然后
 
 > python train_w2v.py
 
 这一步是训练一个word2vec模型，仅使用本项目中提供的语料，如果有另外的语料效果会更好
-    最后 
-
+     
 > python train.py
+
+最后
 
 训练一个cnn分类模型
 ## 准确率能到74%
