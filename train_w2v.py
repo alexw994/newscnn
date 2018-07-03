@@ -28,10 +28,11 @@ def main():
                      window = 5,
                      min_count = 2,
                      workers = 2)
-    if not _join_path('w2v_model'):
-        os.mkdir(_join_path('w2v_model'))
+    w2v_model_path = _join_path('w2v_model')
+    if not w2v_model_path:
+        os.mkdir(w2v_model_path)
 
-    model.save(_join_path('w2v_model', 'word2vec.model'))
+    model.save(os.path.join(w2v_model_path, 'word2vec.model'))
     print('have trained')
 if __name__ == '__main__':
     main()
