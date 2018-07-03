@@ -1,0 +1,4 @@
+/checkpoint/*
+*.txt
+!/txt_data/*.txt
+meta.npy
