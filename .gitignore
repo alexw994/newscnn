@@ -2,3 +2,4 @@
 *.txt
 !/txt_data/*.txt
 meta.npy
+/w2v_model/*
