@@ -41,8 +41,8 @@ def main():
         os.makedirs(checkpoint_dir)
     model_name = 'NEWSCNN'
 
-    # M_train, M_test, max_len = get_meta()
-    # np.save(os.path.join(os.getcwd(), 'meta.npy'), [M_train, M_test, max_len])
+    M_train, M_test, max_len = get_meta()
+    np.save(os.path.join(os.getcwd(), 'meta.npy'), [M_train, M_test, max_len])
 
     train_data = Seqdata(is_train=True, embedding_size=embedding_size)
     test_data = Seqdata(is_train=False, embedding_size=embedding_size)
